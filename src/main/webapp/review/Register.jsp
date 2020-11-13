@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron shadow-lg p-3 mb-5 rounded">
             <p class="text-center display-1 text-primary">Register Form Review</p>
             <hr class="my-4">
 
@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label for="enter_name" class="text-secondary">Name</label>
-                    <input type="text" class="form-control" name="enter_name" id="enter_name" required
+                    <input type="text" class="form-control" name="enter_name" id="enter_name" required>
                 </div>
 
                 <div class="form-group">
