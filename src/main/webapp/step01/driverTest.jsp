@@ -6,9 +6,9 @@
     <%--Meta Tags--%>
     <meta name="viewport" content="width=device-height, initial-scale=1, shrink-to-fit=no"/>
 
-    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap-grid.min.css"/>
-    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css"/>
-    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css"/>
 
     <title>Driver Connection Test</title>
 </head>
