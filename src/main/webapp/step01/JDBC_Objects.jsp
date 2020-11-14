@@ -30,7 +30,7 @@
         : Connection conn = DriverManager.getConnection(url,user,passwd);
         //The Object(example/conn) implement Connection Interface is expression of DB Connection Object.
 
-        The Object 'conn' is used by getting Statement/PreparedStatement/CallableStatement Object.
+        The Object 'conn' is used get Statement/PreparedStatement/CallableStatement Object.
 
         For example:
             Statement stmt = conn.createStatement();
