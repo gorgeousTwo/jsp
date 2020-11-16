@@ -68,7 +68,7 @@
         }
     %>
 
-    <div class="container col-4">
+    <div class="container col-8">
         <div class="jumbotron shadow-lg p-3 mb-5 rounded">
             <h5 class="text-center text-primary display-1">Processing Result</h5>
             <p class="text-center text-primary"><%=result%></p>
