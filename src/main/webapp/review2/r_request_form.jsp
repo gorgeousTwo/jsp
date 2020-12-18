@@ -46,7 +46,7 @@
 
                 <div class="form-group">
                     <label for="Name">Name</label>
-                    <input type="text" class="form-control" data-error="You must have a Name" id="Name"
+                    <input type="text" class="form-control" data-error="You must have a Name" id="Name" name="Name"
                            placeholder="Name" required>
 
                     <div class="help-block with-errors"></div>
@@ -67,14 +67,7 @@
                 <div class="form-group">
                     <label for="Password">Password</label>
                     <input type="password" name="Password" id="Password" class="form-control" data-minlength="4"
-                    data-error="minlength = 4 characters." placeholder="Passwd">
-
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <label for="ConfirmPassword">Confirm Password</label>
-                    <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control"
-                    data-match="#Password" data-match-error="Passwd don't match." placeholder="Confirm">
+                    data-error="minlength = 4 characters." placeholder="Passwd" required>
 
                     <div class="help-block with-errors"></div>
                 </div>
@@ -82,11 +75,11 @@
                     <label for="Address">Address</label>
                     <select name="Address" id="Address" class="custom-select" required>
                         <option selected>Open this</option>
-                        <option value="1">Whiterun</option>
-                        <option value="2">Winterhold</option>
-                        <option value="3">Solitude</option>
-                        <option value="4">Markarth</option>
-                        <option value="5">I am... I am from Rorikstead..</option>
+                        <option value="Whiterun">Whiterun</option>
+                        <option value="Winterhold">Winterhold</option>
+                        <option value="Solitude">Solitude</option>
+                        <option value="Markarth">Markarth</option>
+                        <option value="I’m…I’m from Rorikstead">I’m…I’m from Rorikstead</option>
                     </select>
                 </div>
                 
