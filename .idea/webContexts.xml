@@ -3,6 +3,7 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/review2/addRecord_p.jsp" value="file://$PROJECT_DIR$/src/main/webapp/review2" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/review2/r_request_view.jsp" value="file://$PROJECT_DIR$/src/main/webapp/review2" />
       </map>
     </option>
