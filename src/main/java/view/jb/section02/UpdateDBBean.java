@@ -10,8 +10,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import view.jb.sha.KISA_SHA256;
-
 public class UpdateDBBean {
 
     private static UpdateDBBean instance = new UpdateDBBean();
