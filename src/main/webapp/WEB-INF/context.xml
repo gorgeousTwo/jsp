@@ -2,14 +2,15 @@
 <Context>
     <!-- DB Connection pool information -->
 
+    <WatchedResource>./WEB-INF/web.xml</WatchedResource>
+
     <Resource name="jdbc/test"
-              auto="Container"
+              auth="Container"
               type="javax.sql.DataSource"
               username="sys as sysdba"
               password="akqjqthsuvkfnfn!"
               driverClassName="oracle.jdbc.driver.OracleDriver"
               url="jdbc:oracle:thin:@localhost:1521:XE"
-              maxWait="5000"
+              maxWaitMillis="5000"
     />
-
 </Context>
