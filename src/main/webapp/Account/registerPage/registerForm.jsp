@@ -40,9 +40,9 @@
 
 <div class="container mt-5">
     <div class="card">
-        <h5 class="card-header text-center">Template</h5>
+        <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form action="#" method="post" role="form" data-toggle="validator">
+            <form action="registerPro.jsp" method="post" role="form" data-toggle="validator">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>
@@ -50,12 +50,21 @@
                            maxlength="10"
                            placeholder="ID" required pattern="^[a-zA-Z0-9_.-]*$">
 
+                    <button class="btn btn-primary btn-sm btn-block" id="checkId">Confirm Check</button>
                     <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="enterPasswd">Password</label>
                     <input type="password" name="enterPasswd" id="enterPasswd" class="form-control" data-minlength="4"
+                           data-error="minlength = 4 characters." placeholder="PASSWORD" required>
+
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkPwd">checkPwd</label>
+                    <input type="password" name="checkPwd" id="checkPwd" class="form-control" data-minlength="4"
                            data-error="minlength = 4 characters." placeholder="PASSWORD" required>
 
                     <div class="help-block with-errors"></div>
@@ -71,27 +80,12 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="enterGender" id="enterGender1" class="custom-control-input" value="M">
-                        <label for="enterGender1" class="custom-control-label">MALE</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="enterGender" id="enterGender2" class="custom-control-input" value="F">
-                        <label for="enterGender2" class="custom-control-label">FEMALE</label>
-                    </div>
+                    <label for="enterAddress">Address</label>
+                    <input type="text" name="enterAddress" id="enterAddress" class="form-control" required
+                    placeholder="WhiteRun">
 
                     <div class="help-block with-errors"></div>
                 </div>
-
-                <div class="form-group">
-                    <label for="enterBirthday">Birthday</label>
-                    <input type="text" name="enterBirthday" id="enterBirthday" class="form-control" maxlength="10"
-                           required
-                           placeholder="20000826">
-
-                    <div class="help-block with-errors"></div>
-                </div>
-
 
                 <div class="form-group">
                     <label for="enterTel">Tel</label>
@@ -102,17 +96,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="enterEmail">Email</label>
-                    <input type="email" id="enterEmail" name="enterEmail" class="form-control"
-                           placeholder="rokir@skyrim.com" required>
-
-                    <div class="help-block with-errors"></div>
+                    <button class="btn btn-primary btn-block" id="submit" type="submit">Submit</button>
+                    <button class="btn btn-primary btn-block" id="cancel" type="submit">Cancel</button>
                 </div>
-
-                <div class="form-group">
-                    <button class="btn btn-primary btn-block" type="submit">SEND</button>
-                </div>
-
             </form>
         </div>
     </div>
@@ -124,5 +110,6 @@
         crossorigin="anonymous"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+<script src="./register.js"></script>
 </body>
 </html>

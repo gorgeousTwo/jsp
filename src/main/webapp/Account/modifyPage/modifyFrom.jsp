@@ -42,7 +42,7 @@
     <div class="card">
         <h5 class="card-header text-center">Template</h5>
         <div class="card-body">
-            <form action="#" method="post" role="form" data-toggle="validator">
+            <form action="modifyPro.jsp" method="post" role="form" data-toggle="validator">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>
