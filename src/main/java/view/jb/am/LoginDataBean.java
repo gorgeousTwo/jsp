@@ -7,6 +7,16 @@ public class LoginDataBean {
     private String pwd;
     private String name;
     private Timestamp reg_date;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     private String tel;
 
     public String getId() {
