@@ -42,7 +42,7 @@
     <div class="card">
         <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form action="registerPro.jsp" method="post" role="form" data-toggle="validator">
+            <form method="post" role="form" data-toggle="validator">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>
@@ -95,11 +95,9 @@
                     <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="form-group">
-                    <button class="btn btn-primary btn-block" id="submit" type="submit">Submit</button>
-                    <button class="btn btn-primary btn-block" id="cancel" type="submit">Cancel</button>
-                </div>
             </form>
+            <button class="btn btn-primary btn-block" id="submit">Submit</button>
+            <button class="btn btn-primary btn-block" id="cancel">Cancel</button>
         </div>
     </div>
 </div>
@@ -110,6 +108,6 @@
         crossorigin="anonymous"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
-<script src="./register.js"></script>
+<script src="register.js"></script>
 </body>
 </html>
