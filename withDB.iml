@@ -41,5 +41,6 @@
     <orderEntry type="library" name="ojdbc8" level="project" />
     <orderEntry type="library" name="tomcat-dbcp" level="project" />
     <orderEntry type="library" name="jQuery" level="project" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>

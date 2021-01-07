@@ -38,12 +38,14 @@
 </head>
 <body>
 <%
+    //session check
     String id = "";
     try {
         id = (String) session.getAttribute("id");
 %>
 
-<% if (id == null || id.equals("")) {%>
+<% //without session
+    if (id == null || id.equals("")) {%>
 <div class="container mt-5">
     <div class="card">
         <h5 class="card-header text-center">Login</h5>
@@ -74,7 +76,8 @@
             <button class="btn btn-primary btn-block" id="register">Register</button>
         </div>
 
-        <%}else{%>
+        <% //session access
+    }else{%>
         <div class="card-body" id="status">
             <button class="btn btn-primary btn-block" id="update">Update</button>
             <button class="btn btn-primary btn-block" id="logout">Logout</button>
@@ -92,6 +95,7 @@
         crossorigin="anonymous"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+<!--include js(jQuery)-->
 <script src="./login.js"></script>
 </body>
 </html>

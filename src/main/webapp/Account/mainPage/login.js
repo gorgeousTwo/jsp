@@ -4,3 +4,4 @@ $(document).ready(function () {
         $("#main_auth").load("../registerPage/registerForm.jsp");
     });
 });
+//document ready -> #register object click -> load jsp page.
