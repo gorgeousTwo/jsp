@@ -48,7 +48,8 @@ $(document).ready(function () {
     });
 
     $("#cancel").click(function () {
-        window.location.href("src/main/webapp/index.jsp");
+        var link = 'main.jsp';
+        window.location.href = link;
     });
 
 

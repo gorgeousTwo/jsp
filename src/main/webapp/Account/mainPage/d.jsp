@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<script src="."></script>
+<script src="src/main/webapp/bootstrap-4.5.3-dist/js/jquery-3.5.1.min.js"></script>
 <script src="src/main/webapp/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="src/main/webapp/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
 
