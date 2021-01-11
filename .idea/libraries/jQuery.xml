@@ -3,9 +3,7 @@
     <properties>
       <option name="frameworkName" value="jQuery" />
     </properties>
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/src/main/webapp/bootstrap-4.5.3-dist/js/jquery-3.5.1.min.js" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
