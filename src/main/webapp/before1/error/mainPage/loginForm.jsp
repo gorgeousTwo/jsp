@@ -96,6 +96,6 @@
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="../../bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
 <!--include js(jQuery)-->
-<script src="./login.js"></script>
+<script src="login.js"></script>
 </body>
 </html>

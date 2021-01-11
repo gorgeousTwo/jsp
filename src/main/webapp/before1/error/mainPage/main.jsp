@@ -16,7 +16,7 @@
     <div class="container col-8">
         <div class="jumbotron shadow-lg">
             <div class="card">
-                <img src="./resource/WEB_STANDARDS.png" class="card-img-top img-fluid shadow-lg rounded" alt="...">
+                <img src="resource/WEB_STANDARDS.png" class="card-img-top img-fluid shadow-lg rounded" alt="...">
                 <div class="card-body" id="main_auth">
                     <jsp:include page="loginForm.jsp"/>
                     <!--will include loginForm and RegisterForm.-->
