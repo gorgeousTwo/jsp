@@ -12,12 +12,9 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="withDB" />
-          <element id="library" level="project" name="jQuery" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="ojdbc8" />
-          <element id="library" level="project" name="tomcat-dbcp" />
         </element>
       </element>
       <element id="directory" name="META-INF">

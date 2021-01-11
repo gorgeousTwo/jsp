@@ -42,7 +42,7 @@
     <div class="card">
         <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form method="post" role="form" data-toggle="validator">
+            <form method="post" role="form" action="registerPro.jsp" data-toggle="validator">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>
