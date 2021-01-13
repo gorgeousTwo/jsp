@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-reboot.min.css"/>
 
-    <title>Title</title>
+        <style>
+            body {
+                background: #EECDA3;
+                background: -webkit-linear-gradient(to top, #EF629F, #EECDA3);
+                background: linear-gradient(to top, #EF629F, #EECDA3);
+            }
+
+            .container {
+                max-width: 550px;
+            }
+
+            .has-error label,
+            .has-error input,
+            .has-error textarea {
+                color: red;
+                border-color: red;
+            }
+
+            .list-unstyled li {
+                font-size: 13px;
+                padding: 4px 0 0;
+                color: red;
+            }
+        </style>
+
+
+        <title>Title</title>
 </head>
 <body>
 
@@ -16,7 +42,7 @@
     <div class="card">
         <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form method="post" role="form" action="registerPro.jsp" data-toggle="validator">
+            <form method="post" role="form" action="registerPro.jsp">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>

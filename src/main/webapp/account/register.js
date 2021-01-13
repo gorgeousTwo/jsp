@@ -8,7 +8,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type:"post",
-                url:"isConfirmed.jsp",
+                url:"./isConfirmed.jsp",
                 data:query,
                 success:function (data) {
                     if (data == 1) {
@@ -38,10 +38,11 @@ $(document).ready(function () {
 
             $.ajax({
                 type:"post",
-                url:"registerPro.jsp",
+                url:"./registerPro.jsp",
                 data:query,
                 success:function(data) {
-                    window.location.href("main.jsp");
+                    const link = 'main.jsp'
+                    window.location.href = link;
                 }
             })
         }

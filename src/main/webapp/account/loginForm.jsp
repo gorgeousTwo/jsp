@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-reboot.min.css"/>
 
-    <title>LoginForm</title>
+        <style>
+            body {
+                background: #EECDA3;
+                background: -webkit-linear-gradient(to top, #EF629F, #EECDA3);
+                background: linear-gradient(to top, #EF629F, #EECDA3);
+            }
+
+            .container {
+                max-width: 550px;
+            }
+
+            .has-error label,
+            .has-error input,
+            .has-error textarea {
+                color: red;
+                border-color: red;
+            }
+
+            .list-unstyled li {
+                font-size: 13px;
+                padding: 4px 0 0;
+                color: red;
+            }
+        </style>
+
+
+        <title>LoginForm</title>
 </head>
 <body>
 <%
