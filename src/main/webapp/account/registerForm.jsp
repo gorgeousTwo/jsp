@@ -16,7 +16,7 @@
     <div class="card">
         <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form method="post" role="form" action="registerPro.jsp">
+            <form method="post" role="form" action="./registerPro.jsp">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>

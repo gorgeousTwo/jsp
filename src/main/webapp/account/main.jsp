@@ -10,13 +10,15 @@
     <title>Account Management</title>
 </head>
 <body>
+
     <div class="container col-8">
         <div class="jumbotron shadow-lg">
             <div class="card">
                 <img src="./resource/CutieSeal.png" alt="Container Image"
                      class="card-img-top img-fluid shadow-sm rounded">
                 <div class="card-body" id="main_auth">
-                    <jsp:include page="./loginForm.jsp"/>
+                    <c:import url="./loginForm.jsp" var="url"/>
+                    ${url}
                 </div>
             </div>
         </div>
