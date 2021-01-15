@@ -4,35 +4,8 @@
 
     <%--Meta Tags--%>
     <meta name="viewport" content="width=device-height, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-grid.min.css"/>
-    <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap-reboot.min.css"/>
-
-        <style>
-            body {
-                background: #EECDA3;
-                background: -webkit-linear-gradient(to top, #EF629F, #EECDA3);
-                background: linear-gradient(to top, #EF629F, #EECDA3);
-            }
-
-            .container {
-                max-width: 550px;
-            }
-
-            .has-error label,
-            .has-error input,
-            .has-error textarea {
-                color: red;
-                border-color: red;
-            }
-
-            .list-unstyled li {
-                font-size: 13px;
-                padding: 4px 0 0;
-                color: red;
-            }
-        </style>
-
+    <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./form.css"/>
 
         <title>LoginForm</title>
 </head>
@@ -91,8 +64,7 @@
 %>
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
-<script src="/webjars/bootstrap/4.5.3/js/bootstrap.min.js"></script>
-<script src="/webjars/bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+<script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
 <script src="./login.js"></script>
 
 </body>

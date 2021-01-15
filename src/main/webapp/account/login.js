@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#register").click(function () {
-        $("#main_auth").load("./registerForm.jsp");
+    $('#register').click(function () {
+        $('#main_auth').load('/account/registerForm.jsp');
     });
 });
