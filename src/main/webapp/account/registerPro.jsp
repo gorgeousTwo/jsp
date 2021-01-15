@@ -11,14 +11,20 @@
     <title>Title</title>
 </head>
 <body>
-<fmt:requestEncoding value="utf-8"/>
+
+<%
+    request.setCharacterEncoding("utf-8");
+%>
 
 <jsp:useBean id="member" class="view.jb.am.LoginDataBean">
     <jsp:setProperty name="member" property="*"/>
 </jsp:useBean>
-<jsp:useBean id="lpb" class="view.jb.am.LoginProcessingBean"/>
-${member.reg_date}
-${lpb.insertMember(member)}
+
+<%
+    member.setReg_date(new Timestamp(System.currentTimeMillis()));
+    LoginProcessingBean lpb = LoginProcessingBean.getInstance();
+    lpb.insertMember(member);
+%>
 
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>

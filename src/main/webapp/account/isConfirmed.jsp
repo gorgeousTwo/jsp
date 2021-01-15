@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <%@ page import="view.jb.am.LoginProcessingBean" %>
+<%@ page import="view.jb.am.LoginDataBean" %>
 <html>
 <head>
 
@@ -11,10 +12,15 @@
 </head>
 <body>
 
-<c:set var="enterId" value="${param.enterId}" scope="request"/>
-<jsp:useBean id="lpb" class="view.jb.am.LoginProcessingBean" scope="request"/>
-<c:set var="check" value="${lpb.confirmId(enterId)}" scope="request"/>
-<c:out value="${check}"/>
+<%
+    request.setCharacterEncoding("utf-8");
+    String id = request.getParameter("enterId");
+    LoginProcessingBean lpb = LoginProcessingBean.getInstance();
+    int check = lpb.confirmId(id);
+    out.println(check);
+%>
+
+
 
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
