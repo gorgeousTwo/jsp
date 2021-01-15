@@ -5,7 +5,7 @@ $(document).ready(function () {
     //check isConfirmed
     $('#checkId').click(function () {
         //not null,
-        if ($('#enterId').val() != null) {
+        if ($('#enterId').val()) {
             let query = {
                 //key enterId's property == enterId.val()
                 enterId: $('#enterId').val()
@@ -67,7 +67,7 @@ $(document).ready(function () {
             return false;
         }
 
-        if ($('enterPasswd').val() != $('#checkPwd').val()) {
+        if ($('#enterPasswd').val() != $('#checkPwd').val()) {
             alert('Check PWD');
             $('#checkPwd').focus();
             status = false;

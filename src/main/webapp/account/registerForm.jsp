@@ -24,7 +24,7 @@
                            maxlength="10"
                            placeholder="ID" required pattern="^[a-zA-Z0-9_.-]*$">
 
-                    <button class="btn btn-primary btn-sm btn-block" id="checkId">Confirm Check</button>
+                    <button class="btn btn-primary btn-sm btn-block" name="checkId" id="checkId">Confirm Check</button>
                     <div class="help-block with-errors"></div>
                 </div>
 
@@ -79,7 +79,7 @@
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
-<script src="./register.js"></script>
+<script src="/account/register.js"></script>
 
 </body>
 </html>
