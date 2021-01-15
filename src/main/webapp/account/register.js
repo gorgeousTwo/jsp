@@ -6,10 +6,7 @@ $(document).ready(function () {
     $('#checkId').click(function () {
         //not null,
         if ($('#enterId').val()) {
-            let query = {
-                //key enterId's property == enterId.val()
-                enterId: $('#enterId').val()
-            };
+            let query = $('#enterId').val();
 
             $.ajax({
                 type: 'POST',
@@ -35,11 +32,11 @@ $(document).ready(function () {
 
         if (status) {
             let query = {
-                enterId: $('#enterId').val(),
-                enterPasswd: $('#enterPasswd').val(),
-                enterName: $('#enterName').val(),
-                enterAddress: $('#enterAddress').val(),
-                enterTel: $('#enterTel').val()
+                id: $('#enterId').val(),
+                pwd: $('#enterPasswd').val(),
+                name: $('#enterName').val(),
+                address: $('#enterAddress').val(),
+                tel: $('#enterTel').val()
             };
 
             $.ajax({

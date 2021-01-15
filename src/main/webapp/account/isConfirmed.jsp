@@ -14,14 +14,11 @@
 
 <%
     request.setCharacterEncoding("utf-8");
-    String id = request.getParameter("enterId");
+    String std = request.getParameter("enterId");
     LoginProcessingBean lpb = LoginProcessingBean.getInstance();
-    int check = lpb.confirmId(id);
-    out.println(check);
+    int query = lpb.confirmId(std);
+    out.println(query);
 %>
-
-
-
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
