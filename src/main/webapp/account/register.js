@@ -6,23 +6,25 @@ $(document).ready(function () {
     $('#checkId').click(function () {
         //not null,
         if ($('#enterId').val()) {
-            let query = $('#enterId').val();
+            var query = {
+                id: $('#enterId').val()
+            };
 
             $.ajax({
                 type: 'POST',
-                url: '/account/isConfirmed.jsp',
+                url: 'isConfirmed.jsp',
                 data: query,
                 success: function (data) {
                     if (data == 1) {
-                        alert('Not available. initialize the Id you entered.');
+                        alert("Duplicated ID");
                         $('#enterId').val('');
                     } else if (data == -1) {
-                        alert('Available Id.');
+                        alert('Possible');
                     }
                 }
-            });
-        } else {
-            alert('Please enter the Id');
+            })
+        }else{
+            alert('Enter Id');
             $('#enterId').focus();
         }
     });

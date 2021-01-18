@@ -23,9 +23,6 @@
                     <input type="text" class="form-control item" name="enterId" id="enterId" minlength="3"
                            maxlength="10"
                            placeholder="ID" required pattern="^[a-zA-Z0-9_.-]*$">
-
-                    <button class="btn btn-primary btn-sm btn-block" name="checkId" id="checkId">Confirm Check</button>
-                    <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
@@ -70,6 +67,7 @@
                 </div>
 
             </form>
+            <button class="btn btn-primary btn-block" name="checkId" id="checkId">Confirm Check</button>
             <button class="btn btn-primary btn-block" id="submit">Submit</button>
             <button class="btn btn-primary btn-block" id="cancel">Cancel</button>
         </div>
