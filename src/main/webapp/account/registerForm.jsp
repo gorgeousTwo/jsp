@@ -67,7 +67,7 @@
                 </div>
 
             </form>
-            <button class="btn btn-primary btn-block" name="checkId" id="checkId">Confirm Check</button>
+            <button class="btn btn-primary btn-block test" name="checkId" id="checkId">Confirm Check</button>
             <button class="btn btn-primary btn-block" id="submit">Submit</button>
             <button class="btn btn-primary btn-block" id="cancel">Cancel</button>
         </div>

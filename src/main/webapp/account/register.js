@@ -2,32 +2,24 @@ let status = true;
 const link = 'main.jsp';
 
 $(document).ready(function () {
-    //check isConfirmed
-    $('#checkId').click(function () {
-        //not null,
-        if ($('#enterId').val()) {
-            var query = {
-                id: $('#enterId').val()
-            };
 
-            $.ajax({
-                type: 'POST',
-                url: 'isConfirmed.jsp',
-                data: query,
-                success: function (data) {
-                    if (data == 1) {
-                        alert("Duplicated ID");
-                        $('#enterId').val('');
-                    } else if (data == -1) {
-                        alert('Possible');
-                    }
+    $('#checkId').click(function () {
+        $.ajax({
+            url: 'isConfirmed.jsp',
+            data: ({
+                userId: $("input[name=enterId]").val()
+            }),
+            success: function (data) {
+                if (data == 1) {
+                    alert("X");
+                    $('input[name=enterId]').val('');
+                }else if (data == -1) {
+                    alert("O");
+                    $('input[name=enterId]').focus();
                 }
-            })
-        }else{
-            alert('Enter Id');
-            $('#enterId').focus();
-        }
-    });
+            }
+        });
+    })
 
     $('#submit').click(function () {
         checkIt();

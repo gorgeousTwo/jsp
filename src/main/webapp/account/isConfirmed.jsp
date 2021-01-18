@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <%@ page import="view.jb.am.LoginProcessingBean" %>
-<%@ page import="view.jb.am.LoginDataBean" %>
 <html>
 <head>
 
@@ -14,10 +13,13 @@
 
 <%
     request.setCharacterEncoding("utf-8");
-    String id = request.getParameter("enterId");
+%>
+
+<%
+    String userId = request.getParameter("userId");
     LoginProcessingBean lpb = LoginProcessingBean.getInstance();
-    int check = lpb.confirmId(id);
-    out.println(check);
+    int check = lpb.confirmId(userId);
+    out.print(check);
 %>
 
 
