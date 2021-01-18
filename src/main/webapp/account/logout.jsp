@@ -1,4 +1,3 @@
-<%@ page import="view.jb.am.LoginProcessingBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <html>
 <head>
@@ -11,16 +10,7 @@
 </head>
 <body>
 <%
-    String id = request.getParameter("id");
-    String pwd = request.getParameter("pwd");
-
-    LoginProcessingBean lpb = LoginProcessingBean.getInstance();
-    int check = lpb.userCheck(id, pwd);
-    if (check == 1) {
-        session.setAttribute("id", id);
-    }
-
-    out.print(check);
+    session.invalidate();
 %>
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
