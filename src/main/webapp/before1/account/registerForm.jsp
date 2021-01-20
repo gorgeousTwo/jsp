@@ -5,7 +5,7 @@
     <%--Meta Tags--%>
     <meta name="viewport" content="width=device-height, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./form.css"/>
+    <link rel="stylesheet" href="form.css"/>
 
 
         <title>Title</title>
@@ -16,7 +16,7 @@
     <div class="card">
         <h5 class="card-header text-center">Register</h5>
         <div class="card-body">
-            <form method="post" role="form" action="./registerPro.jsp">
+            <form method="post" role="form" action="registerPro.jsp">
 
                 <div class="form-group">
                     <label for="enterId">ID</label>
@@ -77,7 +77,7 @@
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
-<script src="/account/register.js"></script>
+<script src="/before1/account/register.js"></script>
 
 </body>
 </html>

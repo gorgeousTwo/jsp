@@ -5,7 +5,7 @@
     <%--Meta Tags--%>
     <meta name="viewport" content="width=device-height, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./form.css"/>
+    <link rel="stylesheet" href="form.css"/>
 
         <title>LoginForm</title>
 </head>
@@ -18,7 +18,7 @@
               <div class="card">
                   <h5 class="card-header text-center">LOGIN</h5>
                   <div class="card-body">
-                      <form action="./loginPro.jsp" method="post">
+                      <form action="loginPro.jsp" method="post">
                           <div class="form-group">
                               <label for="enterId">ID</label>
                               <input type="text" class="form-control item" name="enterId" id="enterId" minlength="3"
@@ -56,7 +56,7 @@
 
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
-<script src="./login.js"></script>
+<script src="login.js"></script>
 
 </body>
 </html>
