@@ -76,4 +76,9 @@ public class loginP {
         return false;
     }
 
+    public boolean update(ldb member) {
+
+        return false;
+    }
+
 }
