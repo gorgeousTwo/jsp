@@ -1,0 +1,14 @@
+.table {
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+.form-group {
+    text-align: center;
+    margin: 0 auto;
+}
+
+thead th {
+    background-color: #006DCC;
+    color: white;
+}
