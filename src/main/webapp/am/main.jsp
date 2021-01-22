@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="./userRegister.jsp" method="post">
+        <form action="/userRegisterServlet" method="post">
             <table class="table table-bordered table-hover mt-3">
                 <thead>
                     <tr>

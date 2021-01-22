@@ -24,4 +24,8 @@
         </jsp-property-group>
     </jsp-config>
 
+    <servlet-mapping>
+        <servlet-name>userRegisterServlet</servlet-name>
+        <url-pattern>/userRegisterServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
