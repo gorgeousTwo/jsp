@@ -28,4 +28,8 @@
         <servlet-name>userRegisterServlet</servlet-name>
         <url-pattern>/userRegisterServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>review</servlet-name>
+        <url-pattern>/review</url-pattern>
+    </servlet-mapping>
 </web-app>
