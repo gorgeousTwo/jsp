@@ -18,6 +18,10 @@
     <div class="container">
         <div class="jumbotron">
             <h4 class="display-2 text-center text-primary">Hello</h4>
+            <ul class="list-group">
+                <p class="text-center text-secondary display-4">Review List</p>
+                <li class="list-group-item text-center">JSTL and DAO</li>
+            </ul>
         </div>
     </div>
 </body>

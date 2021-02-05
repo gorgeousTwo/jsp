@@ -7,8 +7,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
-public class userDAO {
+public class userDAO implements def.preventable{
     private Connection conn = null;
 
     public userDAO() {
@@ -71,4 +72,21 @@ public class userDAO {
         return -1; //db error
     }
 
+    public ArrayList toArray(userDTO dto) {
+        ArrayList result = new ArrayList(10);
+
+        return result;
+    }
+
+
+    @Override
+    public int isContainNull(ArrayList list) {
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == null || list.get(i).equals("") ) {
+                return 0;
+            }
+        }
+        return 1;
+    }
 }
