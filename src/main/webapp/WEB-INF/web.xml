@@ -24,12 +24,19 @@
         </jsp-property-group>
     </jsp-config>
 
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>controller.MainServlet</servlet-class>
+        <init-param>
+            <param-name>charset</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <!--init-param can replace the listener or filter-->
+    </servlet>
     <servlet-mapping>
-        <servlet-name>userRegisterServlet</servlet-name>
-        <url-pattern>/userRegisterServlet</url-pattern>
+        <servlet-name>main</servlet-name>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>review</servlet-name>
-        <url-pattern>/review</url-pattern>
-    </servlet-mapping>
+    <!--All servlet request(*.do) will going to [main]-->
+
 </web-app>
