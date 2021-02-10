@@ -19,7 +19,7 @@ public class FrontServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        loadProperties("manage/properties/");
+        loadProperties("manage/properties/Front");
     }
 
     private void loadProperties(String path) {
