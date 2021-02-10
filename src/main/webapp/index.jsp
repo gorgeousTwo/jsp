@@ -7,22 +7,18 @@
 
     <%--BootStrap/jquery/js files--%>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.css"/>
-    <script defer src="/webjars/jquery/3.5.1/jquery.js"></script>
-    <script defer src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
 
-    <title>Title</title>
+    <title>Index</title>
 </head>
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h4 class="display-2 text-center text-primary">Hello</h4>
-            <ul class="list-group">
-                <p class="text-center text-secondary display-4">List</p>
-                <li class="list-group-item text-center"><a href="memberInsert.jsp">Register</a></li>
-                <li class="list-group-item text-center"><a href="memberUpdate.jsp">Update</a></li>
-                <li class="list-group-item text-center"><a href="memberDelete.jsp">Delete</a></li>
-            </ul>
+            <h4 class="display-2 text-center text-primary">Hello there</h4>
         </div>
     </div>
+
+    <script defer src="/webjars/jquery/3.5.1/jquery.js"></script>
+    <script defer src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
+
 </body>
 </html>

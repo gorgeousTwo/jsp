@@ -7,6 +7,7 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <!--Tomcat DBCP Setting. Detail = ./context.xml-->
     <resource-ref>
         <description>jsptest db</description>
         <res-ref-name>jdbc/test</res-ref-name>
@@ -14,6 +15,7 @@
         <res-auth>Container</res-auth>
     </resource-ref>
 
+    <!--Make JSTL to Default Option-->
     <jsp-config>
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>
@@ -23,20 +25,5 @@
             <include-prelude>/WEB-INF/jsp/commom/directive.jsp</include-prelude>
         </jsp-property-group>
     </jsp-config>
-
-    <servlet>
-        <servlet-name>main</servlet-name>
-        <servlet-class>controller.MainServlet</servlet-class>
-        <init-param>
-            <param-name>charset</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
-        <!--init-param can replace the listener or filter-->
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>main</servlet-name>
-        <url-pattern>*.do</url-pattern>
-    </servlet-mapping>
-    <!--All servlet request(*.do) will going to [main]-->
 
 </web-app>

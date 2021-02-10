@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <!-- DB Connection pool information -->
-
+    <!-- Tomcat DBCP Connection pool information -->
     <WatchedResource>./WEB-INF/web.xml</WatchedResource>
 
     <Resource name="jdbc/test"
