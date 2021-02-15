@@ -39,7 +39,7 @@ public class Controller extends HttpServlet {
      * @see Servlet#init(ServletConfig);
      */
     public void init(ServletConfig config) throws ServletException {
-        loadPro("mimic/proper/properties");
+        loadPro("mimic/proper/mapping");
     }
 
     private void loadPro(String path) {
