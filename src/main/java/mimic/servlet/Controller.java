@@ -94,8 +94,12 @@ public class Controller extends HttpServlet {
             e.printStackTrace();
         }
 
+        if (view == null || view.equals("")) {
+            return;
+        }
+
         request.setAttribute("cont",view);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher(view);
         dispatcher.forward(request, response);
     }
 }
