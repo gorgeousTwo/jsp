@@ -8,4 +8,4 @@ pBook : Store/Manages products
 pQna : Store/Manages QnA for each Products
 pBank : Store/Manages Account Information at the time of purchase.
 pCart : Store/Manages cart
-pBuy : It's annoying, so it won't write it down. buy buy buying buyingggggggggggg
+pBuy : It's annoying, so it won't write it down.

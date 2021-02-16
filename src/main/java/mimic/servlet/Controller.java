@@ -42,6 +42,19 @@ public class Controller extends HttpServlet {
         loadPro("mimic/proper/mapping");
     }
 
+    /**
+     *
+     * 1.rs get "mimic/proper/mapping". (mapping.properties)
+     * 2.action is store key of mapping.properties. example : /mg/managerMain.do
+     * 3.String className will store pair Value. example : bookshop.command.ManagerMainAction
+     * 4.Class commandClass = Class.forName(bookshop.command.ManagerMainAction);
+     * 5.Object commandInstance : get newInstance();
+     *
+     * As a result, commandMap.put(/mg/managerMain.do, pair value(class)'s instance);
+     *
+     * @param path is init() param. loadPro : Can't access/use other method and etc.
+     */
+
     private void loadPro(String path) {
         ResourceBundle rs = ResourceBundle.getBundle(path);
         Enumeration<String> action = rs.getKeys();
@@ -67,6 +80,7 @@ public class Controller extends HttpServlet {
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     * Use requestPro() of this class.
      */
 
     @Override
@@ -74,10 +88,25 @@ public class Controller extends HttpServlet {
         requestPro(request, response);
     }
 
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     * Use requestPro() of this class.
+     */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         requestPro(request, response);
     }
+
+    /**
+     *
+     * -Command Pattern-
+     *
+     * 1.CommandAction com will store Class root('package.package.class' like this), from commandMap.
+     * 2.As a result, String view is execute other implemented requestPro().
+     * 3.request.setAttribute.
+     * 4.forward.
+     */
 
     private void requestPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String view = null;

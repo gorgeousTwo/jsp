@@ -47,5 +47,7 @@
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:4.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:popper.js:1.16.0" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
   </component>
 </module>
