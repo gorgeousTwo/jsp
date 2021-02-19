@@ -8,7 +8,7 @@
     <%--BootStrap/jquery/js files--%>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.3/css/bootstrap.css"/>
 
-    <title>Index</title>
+    <title>Index Page</title>
 </head>
 <body>
 
