@@ -18,13 +18,15 @@
         <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
                 <h4 class="text-white">Index</h4>
-                <p class="text-muted">Account Management Page.</p>
+                <p class="text-muted">Mimic : bookshop Page.</p>
             </div>
             <div class="con-sm-4 offset-md-1 py-4">
                 <h4 class="text-white">Content List</h4>
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-white">Register</a></li>
                     <li><a href="#" class="text-white">Login</a></li>
+                    <li><a href="#" class="text-white">QnA</a></li>
+                    <li><a href="#" class="text-white">Manager Page</a></li>
                 </ul>
             </div>
         </div>
@@ -48,7 +50,7 @@
     <section class="jumbotron text-center">
         <div class="container">
             <h1 id="top">Description</h1>
-            <p class="lead text-muted">This page provide Register/Login/MyPage/Update/Delete function.</p>
+            <p class="lead text-muted">This page provide Mimic : BookShop Example.</p>
         </div>
     </section>
 
@@ -74,7 +76,7 @@
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">Login</h4>
-                        <p class="card-text">Ajax? : Get Session Id</p>
+                        <p class="card-text">User Login and Manager Login</p>
                         <a href="#" class="btn btn-primary">login</a>
                     </div>
                 </div>
@@ -88,7 +90,7 @@
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">My Page</h4>
-                            <p class="card-text">Check my information.</p>
+                            <p class="card-text">User's My Page and Manager's My Page</p>
                             <a href="#" class="btn btn-primary">my page</a>
                         </div>
                     </div>
