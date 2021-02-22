@@ -11,12 +11,26 @@
 <body>
 
 <c:if test="${empty sessionScope.id}">
-    
+    <div id="mList">
+        <p class="text-primary text-center">Please Login</p>
+    </div>
+</c:if>
+<c:if test="${!empty sessionScope.id}">
+    <div id="mList">
+        <ul>
+            <li><button id="registProduct">Insert</button></li>
+            <li><button id="updateProduct">Update/Delete</button></li>
+        </ul>
+        <ul>
+            <li><button id="orderedProduct">Check All Ordered Product</button></li>
+            <li><button id="qna">QnA</button></li>
+        </ul>
+    </div>
 </c:if>
 
 
-<script defer src="/webjars/jquery/3.5.1/jquery.js"></script>
-<script defer src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
-
+<script src="/webjars/jquery/3.5.1/jquery.js"></script>
+<script src="/webjars/bootstrap/4.5.3/js/bootstrap.js"></script>
+<script type="text/javascript" defer src="./manageMain.js"></script>
 </body>
 </html>
